@@ -4,9 +4,32 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel ./src/index.html --open",
+    "lint:html": "linthtml ./src/index.html",
+    "lint:css": "stylelint **/*.scss",
+    "lint:js": "eslint ./src",
+    "lint": "concurrently \"npm run lint:html\" \"npm run lint:css\" \"npm run lint:js\"",
+    "build": "rm -rf dist && parcel build ./src/index.html --public-url ./ --no-content-hash",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@linthtml/linthtml": "^0.9.3",
+    "concurrently": "^7.5.0",
+    "eslint": "^8.26.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "gh-pages": "^4.0.0",
+    "husky": "^8.0.1",
+    "parcel": "^1.12.3",
+    "sass": "^1.55.0",
+    "stylelint": "^14.14.0",
+    "stylelint-config-standard-scss": "^6.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  }
 }

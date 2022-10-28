@@ -1,13 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="style.scss">
-		<script defer type="module" src="index.js"></script>
-    <title>FE Template</title>
-  </head>
-  <body>
-    FE Template
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script> -->
+  <!-- <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.scss">
+  <script defer type="module" src="index.js"></script>
+  <title>Rent Car Website</title>
+</head>
+
+<body>
+  <header>
+    <nav class="d-flex navbar fixed-top justify-content-between d-none d-md-flex">
+      <div class="d-flex">
+        <a class="navbar-brand p-0" href="#">MORENT</a>
+        <form class="d-flex position-relative" role="search">
+          <input class="form-control" type="search" placeholder="Search something here" aria-label="Search">
+          <img class="nav__filter-icon position-absolute" src="./img/header/filter.svg" alt="Filter Icon">
+          <img class="nav__search-icon position-absolute" src="./img/header/search-normal.svg" alt="Search Icon">
+        </form>
+      </div>
+      <div class="d-flex ms-4 nav__items">
+        <a class="" href="#"><img src="./img/header/Like.svg" alt="Like Icon"></a>
+        <a class="" href="#"><img src="./img/header/Notification.svg" alt="Notification Icon"></a>
+        <a class="" href="#"><img src="./img/header/Settings.svg" alt="Settings Icon"></a>
+        <a class="" href="#"><img src="./img/header/Icon-photo.svg" alt="Photo Icon"></a>
+      </div>
+    </nav>
+    <nav class="navbar fixed-top d-md-none d-block">
+      <div class="d-flex flex-row justify-content-between align-items-center">
+        <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MORENT</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Favorites</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Notification</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Settings</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="">
+          <a class="" href="#"><img src="./img/header/Icon-photo.svg" alt="Photo Icon"></a>
+        </div>
+      </div>
+      <div class="mb-4">
+        <a class="navbar-brand p-0" href="#">MORENT</a>
+      </div>
+      <div class="d-flex justify-content-between align-items-center">
+        <form class="d-flex position-relative" role="search">
+          <input class="form-control" type="search" placeholder="Search something here" aria-label="Search">
+          <img class="nav__search-icon position-absolute" src="./img/header/search-normal.svg" alt="Search Icon">
+        </form>
+        <div class="nav__filter-icon-container position-relative">
+          <img class="nav__filter-icon position-absolute top-50 start-50 translate-middle" src="./img/header/filter.svg"
+            alt="Filter Icon">
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-container d-grid gap-3">
+    <div class="row g-0">
+      <div class="col-lg-3 g-0 d-none d-lg-block">
+        Column Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quo alias cupiditate quam accusantium
+        blanditiis animi quibusdam impedit voluptatibus at dolor fuga minus consectetur dolores laudantium ipsa amet,
+        repellat maiores!
+      </div>
+
+
+      <div class="col-lg-9 main-block">
+
+        <section class="row g-0 d-flex">
+          <div class="col g-0 view-card d-flex flex-column justify-content-between">
+            <div class="row mb-4 g-0 view-card__main-image-container flex-fill">
+              <h3 class="view-card__title">Sports car with the best design and acceleration</h3>
+              <p class="view-card__text">Safety and comfort while driving a <br>
+                futuristic and elegant sports car</p>
+              <img class="my-auto view-card__main-image" src="./img/main/Main-View.svg" alt="Main View">
+            </div>
+            <div class="d-flex flex-row justify-content-between view-card__image-cards">
+              <div class="view-card__image-card me-4 p-2">
+                <div class="view-card__image-card-bg d-flex justify-content-center align-items-center">
+                  <img class="" src="./img/main/View 1.svg" alt="View 1">
+                </div>
+              </div>
+              <div class="view-card__image-card me-4">
+                <img src="./img/main/View 2.svg" alt="View 2">
+              </div>
+              <div class="view-card__image-card">
+                <img src="./img/main/View 3.svg" alt="View 3">
+              </div>
+            </div>
+          </div>
+
+          <div class="col bg-white g-0 product-card p-4 d-md-block">
+            <h3 class="product-card__title">Nissan GT - R</h3>
+            <div class="d-flex align-items-center product-card__feedback">
+              <div class="product-card__stars d-flex product-card__stars--4 align-self-end">
+                <div class="product-card__star"></div>
+                <div class="product-card__star"></div>
+                <div class="product-card__star"></div>
+                <div class="product-card__star"></div>
+                <div class="product-card__star"></div>
+              </div>
+              <p class="m-0 product-card__review">440+ Reviewer</p>
+            </div>
+            <p class="product-card__text">
+              NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving
+              proving ground, the "race track".
+            </p>
+
+            <div class="d-flex justify-content-between product-card__flex-items">
+              <div class="product-card__flex-item">
+                <div class="mb-3">Type Car</div>
+                <div>Steering</div>
+              </div>
+              <div class="product-card__flex-item product-card__flex-item--black text-end">
+                <div class="mb-3">Sport</div>
+                <div>Manual</div>
+              </div>
+              <div class="product-card__flex-item mb-xxl-5 mb-xl-4">
+                <div class="mb-3">Capacity</div>
+                <div>Gasoline</div>
+              </div>
+              <div class="product-card__flex-item product-card__flex-item--black text-end">
+                <div class="mb-3">2 Person</div>
+                <div>70L</div>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between">
+              <div class="product-card__price">
+                <p><span>$80.00/</span> days</p>
+                <p class="text-decoration-line-through">$100.00</p>
+              </div>
+              <button type="button" class="product-card__button">Rent Now</button>
+            </div>
+
+
+          </div>
+        </section>
+
+        <section class="bg-white review-block">
+          <h4 class="review-block__title d-inline-block">Reviews</h4>
+          <span class="badge bg-primary">13</span>
+          <div class="d-flex review-block__item">
+            <div class="review-block__image-container me-2 me-md-3">
+              <a class="" href="#"><img src="./img/main/Profil-1.svg" alt="Profil 1"></a>
+            </div>
+            <div class="review-block__info">
+              <div class="d-flex justify-content-between">
+                <h3 class="review-block__name mb-2">Alex Stanton</h3>
+                <p class="review-block__date">21 July 2022</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <h3 class="review-block__job-title">CEO at Bukalapak</h3>
+                <div class="product-card__stars d-flex product-card__stars--4">
+                  <div class="product-card__star"></div>
+                  <div class="product-card__star"></div>
+                  <div class="product-card__star"></div>
+                  <div class="product-card__star"></div>
+                  <div class="product-card__star m-0"></div>
+                </div>
+              </div>
+              <p class="review-block__text d-none d-md-block">We are very happy with the service from the MORENT App.
+                Morent has a low price and also a large variety of cars with good and comfortable facilities. In
+                addition, the service provided by the officers is also very friendly and very polite.</p>
+              <p class="review-block__text d-block d-md-none ">We are greatly helped by the services of the MORENT
+                Application. Morent has a low . . .</p>
+            </div>
+
+          </div>
+          <div class="d-flex review-block__item mb-4">
+            <div class="review-block__image-container me-2 me-md-3">
+              <a class="" href="#"><img src="./img/main/profil-2.svg" alt="Profil 2"></a>
+            </div>
+            <div class="review-block__info">
+              <div class="d-flex justify-content-between">
+                <h3 class="review-block__name mb-2">Skylar Dias</h3>
+                <p class="review-block__date">20 July 2022</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <h3 class="review-block__job-title">CEO at Amazon</h3>
+                <div class="product-card__stars d-flex product-card__stars--4">
+                  <div class="product-card__star"></div>
+                  <div class="product-card__star"></div>
+                  <div class="product-card__star"></div>
+                  <div class="product-card__star"></div>
+                  <div class="product-card__star m-0"></div>
+                </div>
+              </div>
+              <p class="review-block__text d-none d-md-block">We are greatly helped by the services of the MORENT
+                Application. Morent has low prices and also a wide variety of cars with good and comfortable facilities.
+                In addition, the service provided by the officers is also very friendly and very polite.</p>
+              <p class="review-block__text d-block d-md-none ">We are greatly helped by the services of the MORENT
+                Application. Morent has a low . . .</p>
+            </div>
+          </div>
+
+          <div class="review-block__button d-flex justify-content-center align-items-center">
+            <a class="text-decoration-none" href="/">
+              Show All
+              <span class="ms-2">
+                <img src="./img/main/button-item.svg" alt="">
+              </span>
+            </a>
+          </div>
+        </section>
+
+        <div class="d-flex justify-content-between align-items-center px-4">
+          <p>Recent Car</p>
+          <a href="">View All</a>
+        </div>
+
+        <!-- <section class="car-catalog">
+            <div class="d-flex justify-content-between mb-5">
+              <div class="car-catalog__card bg-white flex-fill">
+                <div class="car-catalog__title mb-1">Koenigsegg</div>
+                <div class="car-catalog__category">Sport</div>
+                <div class="car-catalog__image-container">
+                  <img src="./img/main/cars/Car-1.svg" alt="Car 1">
+                </div>
+                <div class="d-flex justify-content-between car-catalog__feature-items">
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/tank.svg" alt="">
+                    90L
+                  </div>
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/circle.svg" alt="">
+                    Manual
+                  </div>
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/profile-2user.svg" alt="">
+                    2 People
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="product-card__price">
+                    <p><span>$80.00/</span> days</p>
+                    <p class="text-decoration-line-through">$100.00</p>
+                  </div>
+                  <button type="button" class="car-catalog__button">Rent Now</button>
+                </div>
+              </div>
+              <div class="car-catalog__card bg-white flex-fill">
+                <div class="car-catalog__title mb-1">Koenigsegg</div>
+                <div class="car-catalog__category">Sport</div>
+                <div class="car-catalog__image-container">
+                  <img src="./img/main/cars/Car-1.svg" alt="Car 1">
+                </div>
+                <div class="d-flex justify-content-between car-catalog__feature-items">
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/tank.svg" alt="">
+                    90L
+                  </div>
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/circle.svg" alt="">
+                    Manual
+                  </div>
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/profile-2user.svg" alt="">
+                    2 People
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="product-card__price">
+                    <p><span>$80.00/</span> days</p>
+                    <p class="text-decoration-line-through">$100.00</p>
+                  </div>
+                  <button type="button" class="car-catalog__button">Rent Now</button>
+                </div>
+              </div>
+              <div class="car-catalog__card bg-white flex-fill">
+                <div class="car-catalog__title mb-1">Koenigsegg</div>
+                <div class="car-catalog__category">Sport</div>
+                <div class="car-catalog__image-container">
+                  <img src="./img/main/cars/Car-1.svg" alt="Car 1">
+                </div>
+                <div class="d-flex justify-content-between car-catalog__feature-items">
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/tank.svg" alt="">
+                    90L
+                  </div>
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/circle.svg" alt="">
+                    Manual
+                  </div>
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/profile-2user.svg" alt="">
+                    2 People
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="product-card__price">
+                    <p><span>$80.00/</span> days</p>
+                    <p class="text-decoration-line-through">$100.00</p>
+                  </div>
+                  <button type="button" class="car-catalog__button">Rent Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between mb-5">
+              <div class="car-catalog__card bg-white flex-fill">
+                <div class="car-catalog__title mb-1">Koenigsegg</div>
+                <div class="car-catalog__category">Sport</div>
+                <div class="car-catalog__image-container">
+                  <img src="./img/main/cars/Car-1.svg" alt="Car 1">
+                </div>
+                <div class="d-flex justify-content-between car-catalog__feature-items">
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/tank.svg" alt="">
+                    90L
+                  </div>
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/circle.svg" alt="">
+                    Manual
+                  </div>
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/profile-2user.svg" alt="">
+                    2 People
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="product-card__price">
+                    <p><span>$80.00/</span> days</p>
+                    <p class="text-decoration-line-through">$100.00</p>
+                  </div>
+                  <button type="button" class="car-catalog__button">Rent Now</button>
+                </div>
+              </div>
+              <div class="car-catalog__card bg-white flex-fill">
+                <div class="car-catalog__title mb-1">Koenigsegg</div>
+                <div class="car-catalog__category">Sport</div>
+                <div class="car-catalog__image-container">
+                  <img src="./img/main/cars/Car-1.svg" alt="Car 1">
+                </div>
+                <div class="d-flex justify-content-between car-catalog__feature-items">
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/tank.svg" alt="">
+                    90L
+                  </div>
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/circle.svg" alt="">
+                    Manual
+                  </div>
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/profile-2user.svg" alt="">
+                    2 People
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="product-card__price">
+                    <p><span>$80.00/</span> days</p>
+                    <p class="text-decoration-line-through">$100.00</p>
+                  </div>
+                  <button type="button" class="car-catalog__button">Rent Now</button>
+                </div>
+              </div>
+              <div class="car-catalog__card bg-white flex-fill">
+                <div class="car-catalog__title mb-1">Koenigsegg</div>
+                <div class="car-catalog__category">Sport</div>
+                <div class="car-catalog__image-container">
+                  <img src="./img/main/cars/Car-1.svg" alt="Car 1">
+                </div>
+                <div class="d-flex justify-content-between car-catalog__feature-items">
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/tank.svg" alt="">
+                    90L
+                  </div>
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/circle.svg" alt="">
+                    Manual
+                  </div>
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/profile-2user.svg" alt="">
+                    2 People
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="product-card__price">
+                    <p><span>$80.00/</span> days</p>
+                    <p class="text-decoration-line-through">$100.00</p>
+                  </div>
+                  <button type="button" class="car-catalog__button">Rent Now</button>
+                </div>
+              </div>
+            </div>  
+          </section> -->
+      </div>
+    </div>
+  </main>
+
+</body>
+
 </html>
