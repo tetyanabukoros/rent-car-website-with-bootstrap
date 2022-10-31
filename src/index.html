@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="style.scss">
+  <link rel="stylesheet" href="./styles/style.scss">
   <script defer type="module" src="index.js"></script>
   <title>Rent Car Website</title>
 </head>
@@ -155,14 +155,18 @@
             </label>
           </div>
         </div>
-        <div class="sidebar__capacity-block">
+        <div class="sidebar__capacity-block position-relative">
           <p class="sidebar__title">P R I C E</p>
-          <!-- <label for="customRange1" class="form-label">Example range</label> -->
-          <input type="range" class="form-range" id="customRange1">
+          <div class="wrap">
+            <input type="range" class="range" min="0" max="100" step="0.1" value="0">
+            <div class="track">
+              <div class="track-inner"></div>
+            </div>
+            <div class="thumb"></div>
+          </div>
           <p class="sidebar__range-title">Max. $100.00</p>
         </div>
       </section>
-
 
       <div class="col-xl-9 main-block">
         <section class="row g-0 main-block__flex">
@@ -171,7 +175,6 @@
               <source media="(max-width: 576px)" srcset="./img/main/car-card-bg-small.svg">
               <img class="mb-4" src="./img/main/car-card-bg-big.svg" alt="Car">
             </picture>
-
             <div class="d-flex flex-row justify-content-between view-card__image-cards">
               <div class="view-card__image-card hover-image-scale rounded">
                 <picture>
@@ -232,10 +235,9 @@
                 <div>70L</div>
               </div>
             </div>
-
             <div class="d-flex justify-content-between">
               <div class="product-card__price">
-                <p class="m-0"><span>$80.00/</span> days</p>
+                <p class="mb-1"><span>$80.00/</span> days</p>
                 <p class="text-decoration-line-through">$100.00</p>
               </div>
               <button type="button" class="product-card__button">Rent Now</button>
@@ -323,27 +325,29 @@
                 <h3 class="car-catalog__title">Koenigsegg</h3>
                 <div class="product-card__like--true"></div>
               </div>
-              <div class="car-catalog__category">Sport</div>
-              <div class="car-catalog__image-container">
-                <img src="./img/main/cars/Car-1.svg" alt="Car 1">
-              </div>
-              <div class="d-flex justify-content-between car-catalog__feature-items">
-                <div class="car-catalog__feature">
-                  <img src="./img/main/cars-features/tank.svg" alt="tank">
-                  90L
+              <div class="d-flex flex-column justify-content-between car-catalog__flex-block">
+                <div class="car-catalog__category">Sport</div>
+                <div class="car-catalog__image-container">
+                  <img src="./img/main/cars/Car-1.svg" alt="Car 1">
                 </div>
-                <div class="car-catalog__feature">
-                  <img src="./img/main/cars-features/circle.svg" alt="circle">
-                  Manual
-                </div>
-                <div class="car-catalog__feature">
-                  <img src="./img/main/cars-features/profile-2user.svg" alt="profile-2user">
-                  2 People
+                <div class="d-flex justify-content-between car-catalog__feature-items">
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/tank.svg" alt="tank">
+                    90L
+                  </div>
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/circle.svg" alt="circle">
+                    Manual
+                  </div>
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/profile-2user.svg" alt="profile-2user">
+                    2 People
+                  </div>
                 </div>
               </div>
               <div class="d-flex justify-content-between">
-                <div class="product-card__price">
-                  <p><span>$99.00/</span> day</p>
+                <div class="car-catalog__price">
+                  <p class="mb-1"><span>$99.00/</span> day</p>
                 </div>
                 <button type="button" class="car-catalog__button">Rent Now</button>
               </div>
@@ -353,27 +357,31 @@
                 <h3 class="car-catalog__title">Nissan GT - R</h3>
                 <div class="product-card__like--false"></div>
               </div>
-              <div class="car-catalog__category">Sport</div>
-              <div class="car-catalog__image-container">
-                <img src="./img/main/cars/Car-2.svg" alt="Car 2">
+
+              <div class="d-flex flex-column justify-content-between car-catalog__flex-block">
+                <div class="car-catalog__category">Sport</div>
+                <div class="car-catalog__image-container">
+                  <img src="./img/main/cars/Car-2.svg" alt="Car 2">
+                </div>
+                <div class="d-flex justify-content-between car-catalog__feature-items">
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/tank.svg" alt="tank">
+                    80L
+                  </div>
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/circle.svg" alt="circle">
+                    Manual
+                  </div>
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/profile-2user.svg" alt="profile-2user">
+                    2 People
+                  </div>
+                </div>
               </div>
-              <div class="d-flex justify-content-between car-catalog__feature-items">
-                <div class="car-catalog__feature">
-                  <img src="./img/main/cars-features/tank.svg" alt="tank">
-                  80L
-                </div>
-                <div class="car-catalog__feature">
-                  <img src="./img/main/cars-features/circle.svg" alt="circle">
-                  Manual
-                </div>
-                <div class="car-catalog__feature">
-                  <img src="./img/main/cars-features/profile-2user.svg" alt="profile-2user">
-                  2 People
-                </div>
-              </div>
+
               <div class="d-flex justify-content-between">
-                <div class="product-card__price">
-                  <p><span>$80.00/</span> day</p>
+                <div class="car-catalog__price">
+                  <p class="mb-1"><span>$80.00/</span> day</p>
                   <p class="text-decoration-line-through">$100.00</p>
                 </div>
                 <button type="button" class="car-catalog__button">Rent Now</button>
@@ -384,27 +392,31 @@
                 <h3 class="car-catalog__title">Rolls-Royce</h3>
                 <div class="product-card__like--false"></div>
               </div>
-              <div class="car-catalog__category">Sport</div>
-              <div class="car-catalog__image-container">
-                <img src="./img/main/cars/Car-3.svg" alt="Car 3">
+
+              <div class="d-flex flex-column justify-content-between car-catalog__flex-block">
+                <div class="car-catalog__category">Sport</div>
+                <div class="car-catalog__image-container">
+                  <img src="./img/main/cars/Car-3.svg" alt="Car 3">
+                </div>
+                <div class="d-flex justify-content-between car-catalog__feature-items">
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/tank.svg" alt="tank">
+                    70L
+                  </div>
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/circle.svg" alt="circle">
+                    Manual
+                  </div>
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/profile-2user.svg" alt="profile-2user">
+                    4 People
+                  </div>
+                </div>
               </div>
-              <div class="d-flex justify-content-between car-catalog__feature-items">
-                <div class="car-catalog__feature">
-                  <img src="./img/main/cars-features/tank.svg" alt="tank">
-                  70L
-                </div>
-                <div class="car-catalog__feature">
-                  <img src="./img/main/cars-features/circle.svg" alt="circle">
-                  Manual
-                </div>
-                <div class="car-catalog__feature">
-                  <img src="./img/main/cars-features/profile-2user.svg" alt="profile-2user">
-                  4 People
-                </div>
-              </div>
+
               <div class="d-flex justify-content-between">
-                <div class="product-card__price">
-                  <p><span>$96.00/</span> day</p>
+                <div class="car-catalog__price">
+                  <p class="mb-1"><span>$96.00/</span> day</p>
                 </div>
                 <button type="button" class="car-catalog__button">Rent Now</button>
               </div>
@@ -420,27 +432,29 @@
                 <h3 class="car-catalog__title">All New Rush</h3>
                 <div class="product-card__like--false"></div>
               </div>
-              <div class="car-catalog__category">SUV</div>
-              <div class="car-catalog__image-container">
-                <img src="./img/main/cars/Car-4.svg" alt="Car 4">
-              </div>
-              <div class="d-flex justify-content-between car-catalog__feature-items">
-                <div class="car-catalog__feature">
-                  <img src="./img/main/cars-features/tank.svg" alt="tank">
-                  70L
+              <div class="d-flex flex-column justify-content-between car-catalog__flex-block">
+                <div class="car-catalog__category">SUV</div>
+                <div class="car-catalog__image-container">
+                  <img src="./img/main/cars/Car-4.svg" alt="Car 4">
                 </div>
-                <div class="car-catalog__feature">
-                  <img src="./img/main/cars-features/circle.svg" alt="circle">
-                  Manual
-                </div>
-                <div class="car-catalog__feature">
-                  <img src="./img/main/cars-features/profile-2user.svg" alt="profile-2user">
-                  6 People
+                <div class="d-flex justify-content-between car-catalog__feature-items">
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/tank.svg" alt="tank">
+                    70L
+                  </div>
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/circle.svg" alt="circle">
+                    Manual
+                  </div>
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/profile-2user.svg" alt="profile-2user">
+                    6 People
+                  </div>
                 </div>
               </div>
               <div class="d-flex justify-content-between">
-                <div class="product-card__price">
-                  <p><span>$72.00/</span> day</p>
+                <div class="car-catalog__price">
+                  <p class="mb-1"><span>$72.00/</span> day</p>
                   <p class="text-decoration-line-through">$80.00</p>
                 </div>
                 <button type="button" class="car-catalog__button">Rent Now</button>
@@ -451,27 +465,29 @@
                 <h3 class="car-catalog__title">CR - V</h3>
                 <div class="product-card__like--true"></div>
               </div>
-              <div class="car-catalog__category">SUV</div>
-              <div class="car-catalog__image-container">
-                <img src="./img/main/cars/Car-5.svg" alt="Car 5">
-              </div>
-              <div class="d-flex justify-content-between car-catalog__feature-items">
-                <div class="car-catalog__feature">
-                  <img src="./img/main/cars-features/tank.svg" alt="tank">
-                  80L
+              <div class="d-flex flex-column justify-content-between car-catalog__flex-block">
+                <div class="car-catalog__category">SUV</div>
+                <div class="car-catalog__image-container">
+                  <img src="./img/main/cars/Car-5.svg" alt="Car 5">
                 </div>
-                <div class="car-catalog__feature">
-                  <img src="./img/main/cars-features/circle.svg" alt="circle">
-                  Manual
-                </div>
-                <div class="car-catalog__feature">
-                  <img src="./img/main/cars-features/profile-2user.svg" alt="profile-2user">
-                  6 People
+                <div class="d-flex justify-content-between car-catalog__feature-items">
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/tank.svg" alt="tank">
+                    80L
+                  </div>
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/circle.svg" alt="circle">
+                    Manual
+                  </div>
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/profile-2user.svg" alt="profile-2user">
+                    6 People
+                  </div>
                 </div>
               </div>
               <div class="d-flex justify-content-between">
-                <div class="product-card__price">
-                  <p><span>$80.00/</span> day</p>
+                <div class="car-catalog__price">
+                  <p class="mb-1"><span>$80.00/</span> day</p>
                 </div>
                 <button type="button" class="car-catalog__button">Rent Now</button>
               </div>
@@ -481,27 +497,29 @@
                 <h3 class="car-catalog__title">All New Terios</h3>
                 <div class="product-card__like--false"></div>
               </div>
-              <div class="car-catalog__category">SUV</div>
-              <div class="car-catalog__image-container">
-                <img src="./img/main/cars/Car-6.svg" alt="Car 6">
-              </div>
-              <div class="d-flex justify-content-between car-catalog__feature-items">
-                <div class="car-catalog__feature">
-                  <img src="./img/main/cars-features/tank.svg" alt="tank">
-                  90L
+              <div class="d-flex flex-column justify-content-between car-catalog__flex-block">
+                <div class="car-catalog__category">SUV</div>
+                <div class="car-catalog__image-container">
+                  <img src="./img/main/cars/Car-6.svg" alt="Car 6">
                 </div>
-                <div class="car-catalog__feature">
-                  <img src="./img/main/cars-features/circle.svg" alt="circle">
-                  Manual
-                </div>
-                <div class="car-catalog__feature">
-                  <img src="./img/main/cars-features/profile-2user.svg" alt="profile-2user">
-                  6 People
+                <div class="d-flex justify-content-between car-catalog__feature-items">
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/tank.svg" alt="tank">
+                    90L
+                  </div>
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/circle.svg" alt="circle">
+                    Manual
+                  </div>
+                  <div class="car-catalog__feature">
+                    <img src="./img/main/cars-features/profile-2user.svg" alt="profile-2user">
+                    6 People
+                  </div>
                 </div>
               </div>
               <div class="d-flex justify-content-between">
-                <div class="product-card__price">
-                  <p><span>$74.00/</span> day</p>
+                <div class="car-catalog__price">
+                  <p class="mb-1"><span>$74.00/</span> day</p>
                 </div>
                 <button type="button" class="car-catalog__button">Rent Now</button>
               </div>
@@ -566,9 +584,9 @@
       </div>
       ©2022 MORENT. All rights reserved
     </div>
-
   </footer>
 
+  <script src="index.js"></script>
 </body>
 
 </html>
