@@ -169,7 +169,7 @@
       </section>
 
       <div class="col-xl-9 main-block">
-        <section class="row g-0 main-block__flex">
+        <section class="row g-0 main-block__flex main-block__container">
           <div class="col-lg view-card">
             <picture>
               <source media="(max-width: 576px)" srcset="./img/main/car-card-bg-small.svg">
@@ -197,13 +197,13 @@
             </div>
           </div>
 
-          <div class="col-lg bg-white g-0 product-card p-4 d-md-block d-xxl-flex flex-column">
+          <div class="col-lg bg-white g-0 product-card p-3 p-sm-4 d-md-block d-xxl-flex flex-column">
             <div class="d-flex justify-content-between mb-2">
               <h3 class="product-card__title">Nissan GT - R</h3>
               <div class="product-card__like--true"></div>
             </div>
             <div class="d-flex align-items-center product-card__feedback">
-              <div class="product-card__stars d-flex product-card__stars--4 align-self-end">
+              <div class="product-card__stars d-flex product-card__stars--4">
                 <div class="product-card__star"></div>
                 <div class="product-card__star"></div>
                 <div class="product-card__star"></div>
@@ -237,7 +237,7 @@
             </div>
             <div class="d-flex justify-content-between">
               <div class="product-card__price">
-                <p class="mb-1"><span>$80.00/</span> days</p>
+                <p class="mb-1"><span>$80.00/</span>days</p>
                 <p class="text-decoration-line-through">$100.00</p>
               </div>
               <button type="button" class="product-card__button">Rent Now</button>
@@ -245,10 +245,10 @@
           </div>
         </section>
 
-        <section class="main-block__flex">
+        <section class="main-block__flex main-block__container">
           <div class="bg-white review-block">
             <h4 class="review-block__title d-inline-block">Reviews</h4>
-            <span class="badge bg-primary">13</span>
+            <span class="badge review-block__badge">13</span>
             <div class="d-flex review-block__item">
               <div class="review-block__image-container me-2 me-md-3">
                 <a class="" href="#"><img src="./img/main/Profil-1.svg" alt="Profil 1"></a>
@@ -313,13 +313,13 @@
           </div>
         </section>
 
-        <div class="d-flex justify-content-between align-items-center px-4 main-block__items">
-          <p class="main-block__text m-0">Recent Car</p>
-          <a class="main-block__link text-decoration-none" href="#">View All</a>
+        <div class="d-flex justify-content-between align-items-center main-block__items main-block__container">
+          <p class="main-block__text m-0 ps-sm-4">Recent Car</p>
+          <a class="main-block__link text-decoration-none pe-sm-4" href="#">View All</a>
         </div>
 
-        <section class="car-catalog">
-          <div class="d-flex justify-content-between mb-5 scroll-el">
+        <section class="car-catalog car-catalog__container">
+          <div class="d-flex justify-content-between mb-4 mb-sm-5 scroll-el">
             <div class="car-catalog__card bg-white flex-fill">
               <div class="d-flex justify-content-between mb-1 align-items-center">
                 <h3 class="car-catalog__title">Koenigsegg</h3>
@@ -347,9 +347,10 @@
               </div>
               <div class="d-flex justify-content-between">
                 <div class="car-catalog__price">
-                  <p class="mb-1"><span>$99.00/</span> day</p>
+                  <p class="mb-1"><span>$99.00/</span>day</p>
                 </div>
-                <button type="button" class="car-catalog__button">Rent Now</button>
+                <button type="button" class="d-none d-sm-block car-catalog__button">Rent Now</button>
+                <button type="button" class="d-block d-sm-none car-catalog__button">Rental Now</button>
               </div>
             </div>
             <div class="car-catalog__card bg-white flex-fill">
@@ -381,13 +382,14 @@
 
               <div class="d-flex justify-content-between">
                 <div class="car-catalog__price">
-                  <p class="mb-1"><span>$80.00/</span> day</p>
+                  <p class="mb-1"><span>$80.00/</span>day</p>
                   <p class="text-decoration-line-through">$100.00</p>
                 </div>
-                <button type="button" class="car-catalog__button">Rent Now</button>
+                <button type="button" class="d-none d-sm-block car-catalog__button">Rent Now</button>
+                <button type="button" class="d-block d-sm-none car-catalog__button">Rental Now</button>
               </div>
             </div>
-            <div class="car-catalog__card bg-white flex-fill">
+            <div class="car-catalog__card bg-white flex-fill me-4 me-sm-0">
               <div class="d-flex justify-content-between mb-1 align-items-center">
                 <h3 class="car-catalog__title">Rolls-Royce</h3>
                 <div class="product-card__like--false"></div>
@@ -416,16 +418,19 @@
 
               <div class="d-flex justify-content-between">
                 <div class="car-catalog__price">
-                  <p class="mb-1"><span>$96.00/</span> day</p>
+                  <p class="mb-1"><span>$96.00/</span>day</p>
                 </div>
-                <button type="button" class="car-catalog__button">Rent Now</button>
+                <button type="button" class="d-none d-sm-block car-catalog__button">Rent Now</button>
+                <button type="button" class="d-block d-sm-none car-catalog__button">Rental Now</button>
               </div>
             </div>
           </div>
-          <div class="d-flex justify-content-between align-items-center px-4 main-block__items">
-            <p class="main-block__text main-block__text--blue m-0">Recomendation Car</p>
-            <a class="main-block__link text-decoration-none" href="#">View All</a>
+
+          <div class="d-flex justify-content-between align-items-center main-block__items">
+            <p class="main-block__text main-block__text--blue m-0 ps-sm-4">Recomendation Car</p>
+            <a class="main-block__link text-decoration-none pe-4" href="#">View All</a>
           </div>
+
           <div class="d-flex justify-content-between mb-5 scroll-el">
             <div class="car-catalog__card bg-white flex-fill">
               <div class="d-flex justify-content-between mb-1 align-items-center">
@@ -454,10 +459,11 @@
               </div>
               <div class="d-flex justify-content-between">
                 <div class="car-catalog__price">
-                  <p class="mb-1"><span>$72.00/</span> day</p>
+                  <p class="mb-1"><span>$72.00/</span>day</p>
                   <p class="text-decoration-line-through">$80.00</p>
                 </div>
-                <button type="button" class="car-catalog__button">Rent Now</button>
+                <button type="button" class="d-none d-sm-block car-catalog__button">Rent Now</button>
+                <button type="button" class="d-block d-sm-none car-catalog__button">Rental Now</button>
               </div>
             </div>
             <div class="car-catalog__card bg-white flex-fill">
@@ -487,12 +493,13 @@
               </div>
               <div class="d-flex justify-content-between">
                 <div class="car-catalog__price">
-                  <p class="mb-1"><span>$80.00/</span> day</p>
+                  <p class="mb-1"><span>$80.00/</span>day</p>
                 </div>
-                <button type="button" class="car-catalog__button">Rent Now</button>
+                <button type="button" class="d-none d-sm-block car-catalog__button">Rent Now</button>
+                <button type="button" class="d-block d-sm-none car-catalog__button">Rental Now</button>
               </div>
             </div>
-            <div class="car-catalog__card bg-white flex-fill">
+            <div class="car-catalog__card bg-white flex-fill me-4 me-sm-0">
               <div class="d-flex justify-content-between mb-1 align-items-center">
                 <h3 class="car-catalog__title">All New Terios</h3>
                 <div class="product-card__like--false"></div>
@@ -519,9 +526,10 @@
               </div>
               <div class="d-flex justify-content-between">
                 <div class="car-catalog__price">
-                  <p class="mb-1"><span>$74.00/</span> day</p>
+                  <p class="mb-1"><span>$74.00/</span>day</p>
                 </div>
-                <button type="button" class="car-catalog__button">Rent Now</button>
+                <button type="button" class="d-none d-sm-block car-catalog__button">Rent Now</button>
+                <button type="button" class="d-block d-sm-none car-catalog__button">Rental Now</button>
               </div>
             </div>
           </div>
