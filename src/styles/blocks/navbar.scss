@@ -1,5 +1,7 @@
+@import "../utils/variables.scss";
+
 .navbar {
-  background: #FFFFFF;
+  background: $white-color;
   border: 1px solid rgba(195, 212, 233, 0.4);
   padding: 0 32px;
   height: 124px;
@@ -9,7 +11,7 @@
   }
 
   &__item {
-    font-family: 'Plus Jakarta Sans';
+    font-family: $primary-font;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -25,9 +27,9 @@
   }
 
   &__logo {
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: $primary-font, sans-serif;
     font-style: normal;
-    color: #3563E9;
+    color: $base-color;
     font-weight: 700;
     font-size: 32px;
     line-height: 120%;
@@ -53,7 +55,7 @@
 
     &::placeholder {
       color: #3D5278;
-      font-family: 'Plus Jakarta Sans';
+      font-family: $primary-font;
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
@@ -69,6 +71,10 @@
       border: 1px solid rgba(195, 212, 233, 0.4);
       border-radius: 10px;
       padding: 11px 0 11px 56px;
+    }
+
+    @media (max-width: 576px) {
+      width: 250px;
     }
   }
 
@@ -132,4 +138,11 @@
     padding: 0 24px;
     height: 222px;
   }
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
 }

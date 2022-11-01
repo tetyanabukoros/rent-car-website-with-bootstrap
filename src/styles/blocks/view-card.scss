@@ -1,5 +1,6 @@
+@import "../utils/variables.scss";
+
 .view-card {
-  // padding-top: 32px;
   max-width: 492px;
   margin-right: 16px;
 
@@ -14,7 +15,7 @@
   &__main-image-container {
     border-radius: 10px;
     min-height: 360px;
-    background-color: #3563E9;
+    background-color: $base-color;
     padding: 24px;
   }
 
@@ -35,4 +36,18 @@
     margin: 0 0 32px 0;
     max-width: 327px;
   }
+}
+
+.hover-image-scale {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.hover-image-scale img {
+  transition: 1s;
+  display: block;
+}
+
+.hover-image-scale img:hover {
+  transform: scale(1.2);
 }

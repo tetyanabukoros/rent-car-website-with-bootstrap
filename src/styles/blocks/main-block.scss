@@ -1,3 +1,5 @@
+@import "../utils/variables.scss";
+
 .main-block {
   background-color: #F6F7F9;
 
@@ -27,29 +29,55 @@
   }
 
   &__text {
-    font-family: 'Plus Jakarta Sans';
+    font-family: $primary-font;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
-    color: #90A3BF;
+    color: $gray-color;
   }
 
   &__text--blue {
-    color: #3563E9;
+    color: $base-color;
 
     @media (max-width: 576px) {
-      color: #90A3BF;
+      color: $gray-color;
     }
   }
 
   &__link {
-    font-family: 'Plus Jakarta Sans';
+    font-family: $primary-font;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
-    color: #3563E9;
+    color: $base-color;
+    position: relative;
+    cursor: pointer;
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: -4px;
+      width: 0;
+      height: 2px;
+      background-color: $gray-color;
+      transition: width 0.5s;
+    }
+
+    &:hover:after {
+      content: "";
+      width: 100%;
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      height: 2px;
+      background-color: $base-color;
+      transition: width 0.5s;
+    }
   }
 
   @media (max-width: 992px) {

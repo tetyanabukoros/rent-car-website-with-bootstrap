@@ -1,16 +1,18 @@
+@import "../utils/variables.scss";
+
 .review-block {
   padding: 24px;
   max-width: max-content;
   border-radius: 10px;
 
   &__title {
-    font-family: 'Plus Jakarta Sans';
+    font-family: $primary-font;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 25px;
     letter-spacing: -0.02em;
-    color: #1A202C;
+    color: $black-color;
     margin: 0 12px 32px 0;
 
     @media (max-width: 576px) {
@@ -19,12 +21,12 @@
   }
 
   &__name {
-    font-family: 'Plus Jakarta Sans';
+    font-family: $primary-font;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 25px;
-    color: #1A202C;
+    color: $black-color;
 
     @media (max-width: 576px) {
       font-weight: 600;
@@ -35,12 +37,12 @@
   }
 
   &__date {
-    font-family: 'Plus Jakarta Sans';
+    font-family: $primary-font;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
-    color: #90A3BF;
+    color: $gray-color;
 
     @media (max-width: 576px) {
       font-size: 12px;
@@ -49,11 +51,11 @@
   }
 
   &__job-title {
-    font-family: 'Plus Jakarta Sans';
+    font-family: $primary-font;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    color: #90A3BF;
+    color: $gray-color;
     margin: 0 0 12px 0;
 
     @media (max-width: 576px) {
@@ -65,7 +67,7 @@
   }
 
   &__text {
-    font-family: 'Plus Jakarta Sans';
+    font-family: $primary-font;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -80,23 +82,23 @@
   }
 
   &__badge {
-    background-color: #3563E9;
+    background-color: $base-color;
     border-radius: 4px;
-    font-family: 'Plus Jakarta Sans';
+    font-family: $primary-font;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
-    color: #FFFFFF;
+    color: $white-color;
   }
 
   & a {
-    font-family: 'Plus Jakarta Sans';
+    font-family: $primary-font;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
-    color: #90A3BF;
+    color: $gray-color;
     margin-bottom: 32px;
 
     @media (max-width: 992px) {
@@ -110,6 +112,35 @@
       font-size: 14px;
       line-height: 18px;
     }
+  }
+
+  &__button a {
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__button a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: $base-color;
+    transition: width 0.5s;
+  }
+
+  &__button a:hover:after {
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    background-color: $gray-color;
+    transition: width 0.5s;
   }
 
   @media (max-width: 576px) {
