@@ -1,0 +1,135 @@
+.navbar {
+  background: #FFFFFF;
+  border: 1px solid rgba(195, 212, 233, 0.4);
+  padding: 0 32px;
+  height: 124px;
+
+  &__toggler-icon {
+    background-image: url("../img/header/menu.svg");
+  }
+
+  &__item {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #3D5278;
+    margin-bottom: 24px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #3D5278;
+  }
+
+  &__logo {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    color: #3563E9;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    margin: 0 64px 0 28px;
+
+    @media (max-width: 1200px) {
+
+      font-size: 24px;
+      margin: 0 32px 0 14px;
+    }
+
+    @media (max-width: 768px) {
+      margin: 0;
+    }
+  }
+
+  &__search {
+    border: 1px solid rgba(195, 212, 233, 0.4);
+    border-radius: 70px;
+    width: 492px;
+    padding: 12px;
+    padding-left: 64px;
+
+    &::placeholder {
+      color: #3D5278;
+      font-family: 'Plus Jakarta Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: -0.02em;
+    }
+
+    @media (max-width: 1200px) {
+      width: 290px;
+    }
+
+    @media (max-width: 768px) {
+      border: 1px solid rgba(195, 212, 233, 0.4);
+      border-radius: 10px;
+      padding: 11px 0 11px 56px;
+    }
+  }
+
+  &__search-icon {
+    height: 22px;
+    z-index: 1;
+    top: 12px;
+    bottom: 12px;
+    left: 22px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1)
+    }
+
+    @media (max-width: 768px) {
+      height: 19px;
+      z-index: 1;
+      top: 14px;
+      bottom: 14px;
+      left: 26px;
+    }
+  }
+
+  &__filter-icon {
+    height: 24px;
+    z-index: 1;
+    top: 12px;
+    bottom: 12px;
+    right: 20px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1)
+    }
+  }
+
+  &__items {
+    gap: 20px;
+  }
+
+  &__item {
+    border-radius: 50%;
+
+    &:hover {
+      transition-duration: 0.5s;
+      background-color: rgba(195, 212, 233, 0.4);
+    }
+  }
+
+  &__filter-icon-container {
+    border: 1px solid rgba(195, 212, 233, 0.4);
+    border-radius: 10px;
+    height: 48px;
+    width: 48px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 24px;
+    height: 222px;
+  }
+}

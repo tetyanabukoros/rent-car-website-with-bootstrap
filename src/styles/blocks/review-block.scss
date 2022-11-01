@@ -1,0 +1,118 @@
+.review-block {
+  padding: 24px;
+  max-width: max-content;
+  border-radius: 10px;
+
+  &__title {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.02em;
+    color: #1A202C;
+    margin: 0 12px 32px 0;
+
+    @media (max-width: 576px) {
+      margin: 0 12px 24px 0;
+    }
+  }
+
+  &__name {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #1A202C;
+
+    @media (max-width: 576px) {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: -0.01em;
+    }
+  }
+
+  &__date {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #90A3BF;
+
+    @media (max-width: 576px) {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  &__job-title {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #90A3BF;
+    margin: 0 0 12px 0;
+
+    @media (max-width: 576px) {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: -0.01em;
+    }
+  }
+
+  &__text {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    letter-spacing: -0.02em;
+    color: #3D5278;
+
+    @media (max-width: 576px) {
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__badge {
+    background-color: #3563E9;
+    border-radius: 4px;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+  }
+
+  & a {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #90A3BF;
+    margin-bottom: 32px;
+
+    @media (max-width: 992px) {
+      max-width: 492px;
+    }
+
+    @media (max-width: 576px) {
+      margin-bottom: 10px;
+      max-width: 327px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    padding: 16px;
+  }
+}

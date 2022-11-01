@@ -1,0 +1,38 @@
+.view-card {
+  // padding-top: 32px;
+  max-width: 492px;
+  margin-right: 16px;
+
+  & img {
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.03)
+    }
+  }
+
+  &__main-image-container {
+    border-radius: 10px;
+    min-height: 360px;
+    background-color: #3563E9;
+    padding: 24px;
+  }
+
+  &__image-card {
+    border-radius: 8px;
+  }
+
+  &__image-cards img {
+    border-radius: 8px;
+    max-width: 100%;
+  }
+
+  @media (max-width: 992px) {
+    margin: 0 0 32px 0;
+  }
+
+  @media (max-width: 576px) {
+    margin: 0 0 32px 0;
+    max-width: 327px;
+  }
+}

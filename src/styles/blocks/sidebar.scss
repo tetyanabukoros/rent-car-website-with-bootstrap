@@ -1,0 +1,32 @@
+.sidebar {
+  padding: 32px;
+
+  &__title {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #94A7CB;
+    margin-bottom: 28px;
+  }
+
+  &__type-block {
+    margin-bottom: 56px;
+  }
+
+  &__capacity-block {
+    margin-bottom: 56px;
+  }
+
+  &__range-title {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: #3D5278;
+  }
+}
