@@ -1,9 +1,6 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import "~bootstrap/scss/bootstrap";
 
+@import "./blocks/main.scss";
 @import "./blocks/main-block.scss";
 @import "./blocks/navbar.scss";
 @import "./blocks/view-card.scss";
@@ -12,16 +9,3 @@
 @import "./blocks/car-catalog.scss";
 @import "./blocks/sidebar.scss";
 @import "./blocks/footer.scss";
-
-main {
-  margin-top: 124px;
-
-  @media (max-width: 768px) {
-    margin-top: 222px;
-  }
-}
-
-
-.bg-1 {
-  // box-shadow: 0 0 15px 0 rgb(207, 139, 139);
-}

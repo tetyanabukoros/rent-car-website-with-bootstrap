@@ -2,7 +2,7 @@
   "name": "rent-car-website",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "source": "./src/index.js",
   "scripts": {
     "start": "parcel ./src/index.html --open",
     "lint:html": "linthtml ./src/index.html",
